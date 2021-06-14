@@ -1,0 +1,105 @@
+*{
+    list-style: none; /*태그 기호 없애기*/
+    text-decoration: none;
+}
+body{
+    background-color: gainsboro;
+    font-family: 'Sunflower', sans-serif;
+}
+
+/* width 100% heigth 1000px
+/* ------------------------------------------------------*/
+header{
+    width:  100%;
+    height: 100px;
+    background-color: darkgrey;
+  
+}
+#logo{
+    width: 8em;
+}
+#head{
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    height: 100px;
+    box-shadow: 0 2px gray; 
+  
+}
+header p{
+    position: relative;
+    bottom: 1em;
+    left: 10px;
+    font-size: 13px;
+   
+}
+#hr{
+    position: absolute;
+    left: 310px;
+    height:100px;
+    width: 1px;
+    background-color: black;
+}
+/* ------------------------------------------------------*/
+/*매뉴바*/
+nav{
+    float: right;
+    width: 80%;
+    height: 100px;
+    box-shadow: 2px  2px grey;
+}
+nav div{
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    border-radius: 10px;
+}
+nav div a{
+    flex: 1;
+    display: block;
+    line-height: 100px;
+    text-align: center;
+    color: gray; 
+}
+nav div a.on{
+    /*class가 on일때만*/
+    color:black;
+
+}
+/*마우스가 올라갈때 바뀜*/
+nav div a:hover{
+    text-shadow: 0 0 1px darkslateblue;
+}
+nav div > span{ /*줄 길이*/
+    position: absolute;
+    left: 130px;
+    bottom: 0;
+    width: 250px; 
+    height: 3px;
+    background-color: black;  
+    opacity: 0;
+}
+/*첫 번째 <a>인 iPhone12일 때 클릭시 span 이동*/
+nav div a:nth-child(1).on ~span{ 
+    left: 130px;  
+    opacity: 1;   
+}
+/*두 번째 <a>인 iPhone11일 때 클릭시 span 이동*/
+nav div a:nth-child(2).on ~span{ 
+    left: 630px;
+    opacity: 1;   
+}
+/* ------------------------------------------------------*/
+footer{
+    position:absolute;
+    background-color:rgb(220, 218, 215);
+    border-top: 1px solid black;
+    width: 100%;
+    right: 10px;
+    top: 160%;
+}
+footer p{
+    font-size: 10px;
+    text-align: right;
+}

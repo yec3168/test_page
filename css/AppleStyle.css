@@ -1,0 +1,113 @@
+*{
+    list-style: none; /*태그 기호 없애기*/
+    text-decoration: none;
+    
+}
+body{
+    background-color: gainsboro;
+    font-family: 'Sunflower', sans-serif;
+}
+
+/* width 80% 
+/* ------------------------------------------------------*/
+header{
+    width:  100%;
+    height: 100px;
+    background-color: darkgrey ;
+
+}
+#logo{
+    width: 8em;
+}
+#head{
+    display: inline-block;
+    text-align: center;
+    width: 20%;
+    height: 100px;
+    box-shadow: 0 2px gray; 
+}
+header p{
+    position: relative;
+    bottom: 1em;
+    left: 10px;
+    font-size: 13px;
+}
+#hr{
+    position: absolute;
+    left: 310px;
+    height:100px;
+    width: 1px;
+    background-color: black;
+}
+/* ------------------------------------------------------*/
+/*매뉴바*/
+nav{
+    float: right;
+    width: 80%;
+    height: 100px;
+    box-shadow: 2px  2px grey;
+}
+nav div{
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+    border-radius: 10px;
+}
+nav div a{
+    flex: 1;
+    display: block;
+    line-height: 100px;
+    text-align: center;
+    color: gray; 
+    
+}
+nav div a:hover{
+    text-shadow: 0 0 1px darkslateblue;
+}
+/* ------------------------------------------------------*/
+section{
+    width: 100%;
+    height: 650px;
+}
+#choice {
+    text-align: center;
+    text-decoration:navy;
+}
+section .on{
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    padding: 50px;
+}
+#choice #p12:hover{
+   width: 636px;
+   height: 330px;
+}
+#choice #p11:hover{
+    width: 636px;
+    height: 330px;
+ }
+#p12{
+    position: relative;
+    border-radius: 50px;
+}
+#p11{
+    width: 586px;
+    height: 280px;
+    border-radius: 50px;
+}
+/* ------------------------------------------------------*/
+footer{
+    position: relative;
+    border-top: 1px solid black;
+    background-color:rgb(220, 218, 215);
+    top: 2px;
+    width: 100%;
+    height: 40px;
+}
+/* 출처 */
+footer p{
+    font-size: 10px;
+    text-align: right;
+}
